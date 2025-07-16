@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Repeating Header/Footer</title>
     <style>
-      table {
+        table {
             width: 100%;
             border-collapse: collapse;
             font-family: Arial, sans-serif;
@@ -12,7 +13,7 @@
 
         th,
         td {
-            border: 1px solid #9DC33B;
+            /* border: 1px solid #9DC33B; */
             padding: 8px;
             text-align: left;
         }
@@ -28,450 +29,468 @@
             font-size: 18px;
             color: #fff;
         }
-        tfoot
-        {
+
+        tfoot {
             margin-top: 20px;
         }
-        
+
         @media print {
-            thead { display: table-header-group; }
-            tfoot { display: table-footer-group; }
-            body { margin: 0; }
-            
+            thead {
+                display: table-header-group;
+            }
+
+            tfoot {
+                display: table-footer-group;
+            }
+
+            body {
+                margin: 0;
+            }
+
         }
     </style>
 </head>
+
 <body>
 
-<table>
-    <thead>
-        <tr>
-            <td style="border: none; padding: 0;">
-                <div
-                    style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0px;">
-                    <div></div>
-                    <img src="./img/logo.png" alt="YES Machinery" style="width:90px; height:auto;">
-                </div>
+    <table>
+        <thead>
+            <tr>
+                <td style="border: none; padding: 0;">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0px;">
+                        <div></div>
+                        <img src="./img/logo.png" alt="YES Machinery" style="width:90px; height:auto;">
+                    </div>
 
-            </td>
-        </tr>
-        <tr>
-            <td style="border: none; padding: 0;">
-                <h2 style="background: none; color: #000; text-align: center; font-size: 25px;">ORDER SUMMARY
-                </h2>
-            </td>
+                </td>
+            </tr>
+            <tr>
+                <td style="border: none; padding: 0;">
+                    <hr style="border: 3px solid #9DC33B; margin-top: 10px; margin-bottom: 10px;">
+                </td>
+            </tr>
 
-        </tr>
-        <tr>
-            <td style="border: none; padding: 0;">
-                <h4 style="background: none; color: #9DC33B; text-align: center; font-size: 18px; margin: 0;">
-                    (Approved)
-                </h4>
-            </td>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="3"
+                    style="border-bottom: none; border-left: none; border-right: none; border-top: 3px solid #9DC33B; margin-top: 20px;">
+                    <table style="width: 100%; border: none;">
+                        <tr>
+                            <td style="border: none; font-size: 11px;">
+                                <b>YORK ENGINEERING SOLUTIONS FZC</b><br>
+                                Office No.LV-27D, PO BOX 42167,<br>
+                                Hamriyah Free Zone Phase 2, Sharjah, UAE
+                            </td>
+                            <td style="border: none; text-align: right; font-size: 11px;" colspan="2">
+                                Tel: +971 65 264 382 | <br>
+                                Fax: +971 65 264 384
+                                Mail: sales@yesmachinery.ae
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </tfoot>
 
-        </tr>
-        <tr>
-            <td style="border: none; padding: 0;">
-                <hr style="border: 2px solid #9DC33B; margin-top: 10px; margin-bottom: 20px;">
-            </td>
-        </tr>
-    </thead>
-    <tfoot>
-        <tr>
-            <td colspan="3" style="border-bottom: none; border-left: none; border-right: none; border-top: 3px solid #9DC33B; margin-top: 20px;">
-                <table style="width: 100%; border: none;">
-                    <tr>
-                        <td style="border: none; font-size: 11px;">
-                            <b>YORK ENGINEERING SOLUTIONS FZC</b><br>
-                            Office No.LV-27D, PO BOX 42167,<br>
-                            Hamriyah Free Zone Phase 2, Sharjah, UAE
-                        </td> 
-                        <td style="border: none; text-align: right; font-size: 11px;" colspan="2">
-                            Tel: +971 65 264 382 | <br>
-                             Fax: +971 65 264 384
-                            Mail: sales@yesmachinery.ae
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </tfoot>
-    
-    <tbody>
-       <tr>
-        <td>  
-            <table border="1" cellpadding="6" cellspacing="0"
-                style="border-collapse: collapse; width: 100%;margin-bottom: 30px; margin-top: 30px;">
-                <tbody>
-        
-                    <tr>
-                        <td><strong>OS No.</strong></td>
-                        <td>YES/OS/25/667</td>
-                        <td><strong>OS Date</strong></td>
-                        <td>2025-07-11</td>
-                    </tr>
-                    <tr>
-                        <td><strong>PO No.</strong></td>
-                        <td></td>
-                        <td><strong>PO Date</strong></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Client/Buyer</strong></td>
-                        <td colspan="3">Ecolab, United Arab Emirates</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Delivery Term</strong></td>
-                        <td>DDP</td>
-                        <td><strong>PO Received Date</strong></td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
-        
-            <table style="width: 100%;">
-                <tr>
-                    <td style="border: none; padding: 0;">
-                        <h2>ITEM DETAILS</h2>
-                    </td>
-                </tr>
-            </table>
-        
-            <table border="1" cellspacing="0" cellpadding="8"
-                style="border-collapse: collapse; width: 100%;margin-bottom: 30px;">
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Description</th>
-                        <th>Qty</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>With orange connection - K-Mop - Mop holder for mop with universal connector</td>
-                        <td>1</td>
-                    </tr>
-        
-                </tbody>
-            </table>
-            <table style="width: 100%;">
-                <tr>
-                    <td style="width: 50%;"><strong>Selling Price (AED):</strong> 13.08</td>
-                    <td style="width: 50%;"><strong>Promised Delivery:</strong> 4 days</td>
-                    <td style="width: 50%;"><strong>Price Basis:</strong> aed</td>
-        
-                </tr>
-            </table>
-        
-        
-            <table border="1" cellspacing="0" cellpadding="8"
-                style="border-collapse: collapse; width: 100%;margin-bottom: 30px;">
-                <thead>
-                    <tr>
-                        <th style="background-color: #9DC33B; color: white;">Payment Term</th>
-                        <th style="background-color: #9DC33B; color: white;">Description</th>
-                        <th style="background-color: #9DC33B; color: white;">Yes/No</th>
-                        <th style="background-color: #9DC33B; color: white;">Expected Date</th>
-                        <th style="background-color: #9DC33B; color: white;">Remark</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>P1</td>
-                        <td>30% advance along with PO</td>
-                        <td>✔</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>P2</td>
-                        <td>30% upon delivery</td>
-                        <td>✔</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
-        
-            <table style="width: 100%;">
-                <tr>
-                    <td style="border: none; padding: 0;">
-                        <h2>SUPPLIER DETAILS</h2>
-                    </td>
-                </tr>
-            </table>
-        
-            <table border="1" cellspacing="0" cellpadding="8"
-                style="border-collapse: collapse; width: 100%;margin-bottom: 30px;">
-                <tr>
-                    <td><strong>Supplier Name & Country</strong></td>
-                    <td>TWT, Italy</td>
-                </tr>
-                <tr>
-                    <td><strong>Delivery Term</strong></td>
-                    <td>FOB</td>
-                </tr>
-                <tr>
-                    <td><strong>Buying Price (AED)</strong></td>
-                    <td>6.78 AED</td>
-                </tr>
-                <tr>
-                    <td><strong>Price Basis/Term</strong></td>
-                    <td>AUD</td>
-                </tr>
-            </table>
-        
-        
-            <table style="width: 100%;margin-bottom: 0px;">
-                <tr>
-                    <td style="border: none; padding: 0;">
-                        <h2>PAYMENT TERMS (Supplier)</h2>
-                    </td>
-                </tr>
-            </table>
-            <table border="1" cellspacing="0" cellpadding="8"
-                style="border-collapse: collapse; width: 100%;margin-bottom: 30px;">
-                <thead>
-                    <tr>
-                        <th style="background-color: #9DC33B; color: white;">Payment Term</th>
-                        <th style="background-color: #9DC33B; color: white;">Description</th>
-                        <th style="background-color: #9DC33B; color: white;">Yes/No</th>
-                        <th style="background-color: #9DC33B; color: white;">Expected Date</th>
-                        <th style="background-color: #9DC33B; color: white;">Remark</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>P1</td>
-                        <td>30% advance along with PO</td>
-                        <td>✔</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>P2</td>
-                        <td>30% upon delivery</td>
-                        <td>✔</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
-        
-        
-            <table style="width: 100%;margin-bottom: 0px;">
-                <tr>
-                    <td style="border: none; padding: 0;">
-                        <h2>MARGIN & CHARGES</h2>
-                    </td>
-                </tr>
-            </table>
-            <table border="1" cellspacing="0" cellpadding="8"
-                style="border-collapse: collapse; width: 100%;margin-bottom: 30px;">
-                <thead>
-                    <tr>
-                        <th>OTHER CHARGES</th>
-                        <th>CONSIDERED</th>
-                        <th>REMARKS</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>fright</td>
-                        <td>456.7</td>
-                        <td>testing</td>
-                    </tr>
-                    <!-- Add more rows if needed -->
-                </tbody>
-            </table>
-            <table border="1" cellspacing="0" cellpadding="8"
-                style="border-collapse: collapse; width: 100%;margin-bottom: 30px;">
-                <tr>
-                    <td><strong>MARGIN ONTHE ORDER</strong></td>
-                    <td>45666</td>
-                </tr>
-        
-            </table>
-        
-            <table style="width: 100%;margin-bottom: 0px;">
-                <tr>
-                    <td style="border: none; padding: 0;">
-                        <h2>DELIVERY DETAILS</h2>
-                    </td>
-                </tr>
-            </table>
-        
-            <table border="1" cellspacing="0" cellpadding="8"
-                style="border-collapse: collapse; width: 100%;margin-bottom: 30px;">
-                <tr>
-                    <td><strong>Contact Name</strong></td>
-                    <td>werwer</td>
-                    <td><strong>Email</strong></td>
-                    <td>akjhil@gmail.com</td>
-                </tr>
-                <tr>
-                    <td><strong>Address</strong></td>
-                    <td>rwer</td>
-                    <td><strong>Phone</strong></td>
-                    <td>3345435456</td>
-                </tr>
-                <tr>
-                    <td><strong>Remarks</strong></td>
-                    <td colspan="3">werwer</td>
-                </tr>
-            </table>
-        
-            <table style="width: 100%;margin-bottom: 0px;">
-                <tr>
-                    <td style="border: none; padding: 0;">
-                        <h2>INTERNAL RESPONSIBLE PERSONNEL</h2>
-                    </td>
-                </tr>
-            </table>
-        
-            <table border="1" cellspacing="0" cellpadding="8"
-                style="border-collapse: collapse; width: 100%;margin-bottom: 30px;">
-                <tr>
-                    <td><strong>Account Name</strong></td>
-                    <td colspan="3"></td>
-                </tr>
-                <tr>
-                    <td><strong>Account Email / MOB</strong></td>
-                    <td colspan="3"></td>
-                </tr>
-                <tr>
-                    <td><strong>Procurement Name</strong></td>
-                    <td colspan="3"></td>
-                </tr>
-                <tr>
-                    <td><strong>Procurement Email / MOB</strong></td>
-                    <td colspan="3"></td>
-                </tr>
-                <tr>
-                    <td><strong>OS Meeting By</strong></td>
-                    <td>Abid Hussain</td>
-                    <td><strong>Demo Done By</strong></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td><strong>Handed Over By</strong></td>
-                    <td></td>
-                    <td><strong>Taken Over By</strong></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td><strong>Verified By</strong></td>
-                    <td></td>
-                    <td colspan="2"></td>
-                </tr>
-            </table>
-            <table border="1" cellspacing="0" cellpadding="8"
-                style="border-collapse: collapse; width: 100%; text-align: left;margin-bottom: 30px; ">
-                <thead>
-                    <tr style="background-color: #9DC33B; color: white;">
-                        <th style="background-color: #9DC33B; color: white;">HANDED OVER BY</th>
-                        <th style="background-color: #9DC33B; color: white;">TAKEN OVER BY</th>
-                        <th style="background-color: #9DC33B; color: white;">VERIFIED BY</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <strong>Name:</strong> <br><br>
-                            <strong>Sign:</strong>
-                        </td>
-                        <td>
-                            <strong>Name:</strong> <br><br>
-                            <strong>Sign:</strong>
-                        </td>
-                        <td>
-                            <strong>Name:</strong> <br><br>
-                            <strong>Sign:</strong>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        
-        
-            <table style="width: 100%;margin-bottom: 0px;">
-                <tr>
-                    <td style="border: none; padding: 0;">
-                        <h2>SALES COMMISSIONS</h2>
-                    </td>
-                </tr>
-            </table>
-        
-            <table border="1" cellspacing="0" cellpadding="8"
-                style="border-collapse: collapse; width: 100%;margin-bottom: 30px;">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Percent</th>
-                        <th colspan="2">Amount</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Abid Hussain</td>
-                        <td>100%</td>
-                        <td colspan="2">4.32 AED</td>
-                    </tr>
-                </tbody>
-            </table>
-        
-            <table style="width: 100%;margin-bottom: 0px;">
-                <tr>
-                    <td style="border: none; padding: 0;">
-                        <h2>SPECIAL SERVICE REQUESTS</h2>
-                    </td>
-                </tr>
-            </table>
-        
-            <table border="1" cellspacing="0" cellpadding="8"
-                style="border-collapse: collapse; width: 100%;margin-bottom: 30px;">
-                <tr>
-                    <td><strong>Installation & Training</strong></td>
-                    <td>werwer</td>
-                    <td><strong>Experts</strong></td>
-                    <td>wrwer</td>
-                </tr>
-                <tr>
-                    <td><strong>Estimated Installation</strong></td>
-                    <td>4 hours</td>
-                    <td><strong>Days Site Readiness</strong></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td><strong>Training Requirement</strong></td>
-                    <td></td>
-                    <td><strong>List Consumables</strong></td>
-                    <td></td>
-                </tr>
-        
-                <tr>
-                    <td><strong>Warranty Period</strong></td>
-                    <td>3</td>
-                    <td><strong>Special Offers</strong></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td><strong>Documents Required</strong></td>
-                    <td></td>
-                    <td><strong>Machine Objective</strong></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td><strong>FAT Test / Expectation</strong></td>
-                    <td>No</td>
-                    <td><strong>List SAT Objectives</strong></td>
-                    <td></td>
-                </tr>
-            </table>
-        </td>
-       </tr>
-    </tbody>
-</table>
+        <tbody style="border: none;">
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <td style="border: none; padding: 0;">
+                                <h2 style="background: none; color: #000; text-align: center; font-size: 25px;">ORDER
+                                    SUMMARY
+                                </h2>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td style="border: none; padding: 0;">
+                                <h4
+                                    style="background: none; color: #9DC33B; text-align: center; font-size: 18px; margin-bottom: 10px; margin-top: 0;">
+                                    (Approved)
+                                </h4>
+                            </td>
+
+                        </tr>
+
+                    </table>
+
+                    <table border="1" cellpadding="6" cellspacing="0"
+                        style="border-collapse: collapse; width: 100%;margin-bottom: 30px; margin-top: 10px;">
+                        <tbody>
+
+                            <tr style="border: 1px solid #9DC33B;">
+                                <td><strong>OS No.</strong></td>
+                                <td>YES/OS/25/667</td>
+                                <td><strong>OS Date</strong></td>
+                                <td>2025-07-11</td>
+                            </tr>
+                            <tr style="border: 1px solid #9DC33B;">
+                                <td><strong>PO No.</strong></td>
+                                <td></td>
+                                <td><strong>PO Date</strong></td>
+                                <td></td>
+                            </tr>
+                            <tr style="border: 1px solid #9DC33B;">
+                                <td><strong>Client/Buyer</strong></td>
+                                <td colspan="3">Ecolab, United Arab Emirates</td>
+                            </tr>
+                            <tr style="border: 1px solid #9DC33B;">
+                                <td><strong>Delivery Term</strong></td>
+                                <td>DDP</td>
+                                <td><strong>PO Received Date</strong></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table style="width: 100%;">
+                        <tr style="border: 1px solid #9DC33B;">
+                            <td style="border: none; padding: 0;">
+                                <h2>ITEM DETAILS</h2>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table border="1" cellspacing="0" cellpadding="8"
+                        style="border-collapse: collapse; width: 100%;margin-bottom: 30px;">
+                        <thead>
+                            <tr style="border: 1px solid #9DC33B;">
+                                <th>#</th>
+                                <th>Description</th>
+                                <th>Qty</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border: 1px solid #9DC33B;">
+                                <td>1</td>
+                                <td>With orange connection - K-Mop - Mop holder for mop with universal connector</td>
+                                <td>1</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                    <table style="width: 100%;">
+                        <tr style="border: 1px solid #9DC33B;">
+                            <td style="width: 50%;"><strong>Selling Price (AED):</strong> 13.08</td>
+                            <td style="width: 50%;"><strong>Promised Delivery:</strong> 4 days</td>
+                            <td style="width: 50%;"><strong>Price Basis:</strong> aed</td>
+
+                        </tr>
+                    </table>
+
+
+                    <table border="1" cellspacing="0" cellpadding="8"
+                        style="border-collapse: collapse; width: 100%;margin-bottom: 30px;">
+                        <thead>
+                            <tr>
+                                <th style="background-color: #9DC33B; color: white;">Payment Term</th>
+                                <th style="background-color: #9DC33B; color: white;">Description</th>
+                                <th style="background-color: #9DC33B; color: white;">Yes/No</th>
+                                <th style="background-color: #9DC33B; color: white;">Expected Date</th>
+                                <th style="background-color: #9DC33B; color: white;">Remark</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border: 1px solid #9DC33B;">
+                                <td>P1</td>
+                                <td>30% advance along with PO</td>
+                                <td>✔</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="border: 1px solid #9DC33B;">
+                                <td>P2</td>
+                                <td>30% upon delivery</td>
+                                <td>✔</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table style="width: 100%;">
+                        <tr style="border: 1px solid #9DC33B;">
+                            <td style="border: none; padding: 0;">
+                                <h2>SUPPLIER DETAILS</h2>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table border="1" cellspacing="0" cellpadding="8"
+                        style="border-collapse: collapse; width: 100%;margin-bottom: 30px;">
+                        <tr style="border: 1px solid #9DC33B;">
+                            <td><strong>Supplier Name & Country</strong></td>
+                            <td>TWT, Italy</td>
+                        </tr>
+                        <tr style="border: 1px solid #9DC33B;">
+                            <td><strong>Delivery Term</strong></td>
+                            <td>FOB</td>
+                        </tr>
+                        <tr style="border: 1px solid #9DC33B;">
+                            <td><strong>Buying Price</strong></td>
+                            <td>6.78</td>
+                        </tr>
+                        <tr style="border: 1px solid #9DC33B;">
+                            <td><strong>Price Basis/Term</strong></td>
+                            <td>AUD</td>
+                        </tr>
+                    </table>
+
+
+                    <table style="width: 100%;margin-bottom: 0px;">
+                        <tr style="border: 1px solid #9DC33B;">
+                            <td style="border: none; padding: 0;">
+                                <h2>PAYMENT TERMS (Supplier)</h2>
+                            </td>
+                        </tr>
+                    </table>
+                    <table border="1" cellspacing="0" cellpadding="8"
+                        style="border-collapse: collapse; width: 100%;margin-bottom: 30px;">
+                        <thead>
+                            <tr>
+                                <th style="background-color: #9DC33B; color: white;">Payment Term</th>
+                                <th style="background-color: #9DC33B; color: white;">Description</th>
+                                <th style="background-color: #9DC33B; color: white;">Yes/No</th>
+                                <th style="background-color: #9DC33B; color: white;">Expected Date</th>
+                                <th style="background-color: #9DC33B; color: white;">Remark</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border: 1px solid #9DC33B;">
+                                <td>P1</td>
+                                <td>30% advance along with PO</td>
+                                <td>✔</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr style="border: 1px solid #9DC33B;">
+                                <td>P2</td>
+                                <td>30% upon delivery</td>
+                                <td>✔</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+                    <table style="width: 100%;margin-bottom: 0px;">
+                        <tr style="border: 1px solid #9DC33B;">
+                            <td style="border: none; padding: 0;">
+                                <h2>MARGIN & CHARGES</h2>
+                            </td>
+                        </tr>
+                    </table>
+                    <table border="1" cellspacing="0" cellpadding="8"
+                        style="border-collapse: collapse; width: 100%;margin-bottom: 30px;">
+                        <thead>
+                            <tr style="border: 1px solid #9DC33B;">
+                                <th>OTHER CHARGES</th>
+                                <th>CONSIDERED</th>
+                                <th>REMARKS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border: 1px solid #9DC33B;">
+                                <td>fright</td>
+                                <td>456.7</td>
+                                <td>testing</td>
+                            </tr>
+                            <!-- Add more rows if needed -->
+                        </tbody>
+                    </table>
+                    <table border="1" cellspacing="0" cellpadding="8"
+                        style="border-collapse: collapse; width: 100%;margin-bottom: 30px;">
+                        <tr style="border: 1px solid #9DC33B;">
+                            <td><strong>MARGIN ONTHE ORDER</strong></td>
+                            <td>45666</td>
+                        </tr>
+
+                    </table>
+
+                    <table style="width: 100%;margin-bottom: 0px;">
+                        <tr style="border: 1px solid #9DC33B;">
+                            <td style="border: none; padding: 0;">
+                                <h2>DELIVERY DETAILS</h2>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table border="1" cellspacing="0" cellpadding="8"
+                        style="border-collapse: collapse; width: 100%;margin-bottom: 30px;">
+                        <tr style="border: 1px solid #9DC33B;">
+                            <td><strong>Contact Name</strong></td>
+                            <td>werwer</td>
+                            <td><strong>Email</strong></td>
+                            <td>akjhil@gmail.com</td>
+                        </tr>
+                        <tr style="border: 1px solid #9DC33B;">
+                            <td><strong>Address</strong></td>
+                            <td>rwer</td>
+                            <td><strong>Phone</strong></td>
+                            <td>3345435456</td>
+                        </tr>
+                        <tr style="border: 1px solid #9DC33B;">
+                            <td><strong>Remarks</strong></td>
+                            <td colspan="3">werwer</td>
+                        </tr>
+                    </table>
+
+                    <table style="width: 100%;margin-bottom: 0px;">
+                        <tr style="border: 1px solid #9DC33B;">
+                            <td style="border: none; padding: 0;">
+                                <h2>INTERNAL RESPONSIBLE PERSONNEL</h2>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table border="1" cellspacing="0" cellpadding="8"
+                        style="border-collapse: collapse; width: 100%;margin-bottom: 30px;">
+                        <tr style="border: 1px solid #9DC33B;">
+                            <td><strong>Account Name</strong></td>
+                            <td colspan="3"></td>
+                        </tr>
+                        <tr style="border: 1px solid #9DC33B;">
+                            <td><strong>Account Email / MOB</strong></td>
+                            <td colspan="3"></td>
+                        </tr>
+                        <tr style="border: 1px solid #9DC33B;">
+                            <td><strong>Procurement Name</strong></td>
+                            <td colspan="3"></td>
+                        </tr>
+                        <tr style="border: 1px solid #9DC33B;">
+                            <td><strong>Procurement Email / MOB</strong></td>
+                            <td colspan="3"></td>
+                        </tr>
+                        <tr style="border: 1px solid #9DC33B;">
+                            <td><strong>OS Meeting By</strong></td>
+                            <td>Abid Hussain</td>
+                            <td><strong>Demo Done By</strong></td>
+                            <td></td>
+                        </tr>
+                        <tr style="border: 1px solid #9DC33B;">
+                            <td><strong>Handed Over By</strong></td>
+                            <td></td>
+                            <td><strong>Taken Over By</strong></td>
+                            <td></td>
+                        </tr>
+                        <tr style="border: 1px solid #9DC33B;">
+                            <td><strong>Verified By</strong></td>
+                            <td></td>
+                            <td colspan="2"></td>
+                        </tr>
+                    </table>
+                    <table border="1" cellspacing="0" cellpadding="8"
+                        style="border-collapse: collapse; width: 100%; text-align: left;margin-bottom: 30px; ">
+                        <thead>
+                            <tr style="background-color: #9DC33B; color: white;">
+                                <th style="background-color: #9DC33B; color: white;">HANDED OVER BY</th>
+                                <th style="background-color: #9DC33B; color: white;">TAKEN OVER BY</th>
+                                <th style="background-color: #9DC33B; color: white;">VERIFIED BY</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border: 1px solid #9DC33B;">
+                                <td>
+                                    <strong>Name:</strong> <br><br>
+                                    <strong>Sign:</strong>
+                                </td>
+                                <td>
+                                    <strong>Name:</strong> <br><br>
+                                    <strong>Sign:</strong>
+                                </td>
+                                <td>
+                                    <strong>Name:</strong> <br><br>
+                                    <strong>Sign:</strong>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+                    <table style="width: 100%;margin-bottom: 0px;">
+                        <tr style="border: 1px solid #9DC33B;">
+                            <td style="border: none; padding: 0;">
+                                <h2>SALES COMMISSIONS</h2>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table border="1" cellspacing="0" cellpadding="8"
+                        style="border-collapse: collapse; width: 100%;margin-bottom: 30px;">
+                        <thead>
+                            <tr style="border: 1px solid #9DC33B;">
+                                <th>Name</th>
+                                <th>Percent</th>
+                                <th colspan="2">Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border: 1px solid #9DC33B;">
+                                <td>Abid Hussain</td>
+                                <td>100%</td>
+                                <td colspan="2">4.32 AED</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table style="width: 100%;margin-bottom: 0px;">
+                        <tr style="border: 1px solid #9DC33B;">
+                            <td style="border: none; padding: 0;">
+                                <h2>SPECIAL SERVICE REQUESTS</h2>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table border="1" cellspacing="0" cellpadding="8"
+                        style="border-collapse: collapse; width: 100%;margin-bottom: 30px;">
+                        <tr style="border: 1px solid #9DC33B;">
+                            <td><strong>Installation & Training</strong></td>
+                            <td>werwer</td>
+                            <td><strong>Experts</strong></td>
+                            <td>wrwer</td>
+                        </tr>
+                        <tr style="border: 1px solid #9DC33B;">
+                            <td><strong>Estimated Installation</strong></td>
+                            <td>4 hours</td>
+                            <td><strong>Days Site Readiness</strong></td>
+                            <td></td>
+                        </tr>
+                        <tr style="border: 1px solid #9DC33B;">
+                            <td><strong>Training Requirement</strong></td>
+                            <td></td>
+                            <td><strong>List Consumables</strong></td>
+                            <td></td>
+                        </tr>
+
+                        <tr style="border: 1px solid #9DC33B;">
+                            <td><strong>Warranty Period</strong></td>
+                            <td>3</td>
+                            <td><strong>Special Offers</strong></td>
+                            <td></td>
+                        </tr>
+                        <tr style="border: 1px solid #9DC33B;">
+                            <td><strong>Documents Required</strong></td>
+                            <td></td>
+                            <td><strong>Machine Objective</strong></td>
+                            <td></td>
+                        </tr>
+                        <tr style="border: 1px solid #9DC33B;">
+                            <td><strong>FAT Test / Expectation</strong></td>
+                            <td>No</td>
+                            <td><strong>List SAT Objectives</strong></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 
 </body>
+
 </html>
